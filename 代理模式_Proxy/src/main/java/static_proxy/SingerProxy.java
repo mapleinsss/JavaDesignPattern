@@ -12,6 +12,7 @@ public class SingerProxy implements Singer {
         this.singer = singer;
     }
 
+    @Override
     public void sing() {
         System.out.println("经纪人举办演唱会");
         singer.sing();

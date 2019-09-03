@@ -14,6 +14,7 @@ public class DynamicProxyHandler implements InvocationHandler {
         this.object = object;
     }
 
+    @Override
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
         System.out.println("经纪人举办演唱会");
         Object result = method.invoke(object, args);

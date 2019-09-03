@@ -5,6 +5,7 @@ package jdk_dynamic_proxy;
  * 唱歌实现类，唱歌
  */
 public class SingerImpl implements Singer {
+    @Override
     public void sing() {
         System.out.println("one two three ,la la la ~~");
     }
